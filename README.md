@@ -6,4 +6,4 @@ Team member:
 2) Mimi Saiful
 3) Dzulfaridz Ziziumiza
 4) Khaliq Samad
-5) 
+5) Daniel Chua
