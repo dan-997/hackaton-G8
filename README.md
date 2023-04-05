@@ -278,15 +278,15 @@ Team member:
                     <div class="slide">
                         <img class="slide-img"
                             src=
-"https://th.bing.com/th/id/R.f00b1fdce66a677a444f678b53dbef7e?rik=dv1NLUmMCsET4g&pid=ImgRaw&r=0">
+"https://th.bing.com/th/id/R.f00b1fdce66a677a444f678b53dbef7e?rik=dv1NLUmMCsET4g&pid=ImgRaw&r=0" alt="image 2">
                     </div>
                     <div class="slide">
                         <img class="slide-img" src=
-"https://th.bing.com/th/id/R.639b2c4816f44634f873df6bdb3e8e3b?rik=PQHdjXtE8Y789Q&riu=http%3a%2f%2fcarleton.ca%2ffinancialservices%2fwp-content%2fuploads%2ffs-banner.jpg&ehk=C8drAsOlHIsbe7UmchyJHRgeE3bVZfTlY0a8GYSrBVQ%3d&risl=&pid=ImgRaw&r=0">
+"https://th.bing.com/th/id/R.639b2c4816f44634f873df6bdb3e8e3b?rik=PQHdjXtE8Y789Q&riu=http%3a%2f%2fcarleton.ca%2ffinancialservices%2fwp-content%2fuploads%2ffs-banner.jpg&ehk=C8drAsOlHIsbe7UmchyJHRgeE3bVZfTlY0a8GYSrBVQ%3d&risl=&pid=ImgRaw&r=0" alt="image 3">
                     </div>
                     <div class="slide">
                         <img class="slide-img" src=
-"https://www.surrey.ac.uk/sites/default/files/styles/banner_image_1500x470/public/2018-02/economics-and-finance-banner-image.jpg?itok=Fq_kxmXu">
+"https://www.surrey.ac.uk/sites/default/files/styles/banner_image_1500x470/public/2018-02/economics-and-finance-banner-image.jpg?itok=Fq_kxmXu" alt="image 4">
                     </div>
                 </div>
             </div>
