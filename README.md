@@ -294,3 +294,183 @@ Team member:
     </div>
 </body>
 </html>
+
+
+-----------------------------------------------
+//comparison page
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/comparison.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="#" class="href">Home</a>
+        <a href="#" class="href">Graph</a>
+        <a href="#" class="href">Input</a>
+        <a href="#" class="href">Comparison</a>
+        <a href="#" class="href">About us</a>
+        <form action=""><input type="text" placeholder="Search..."><button type="submit" class="submit">Go</button>
+        </form>
+    </div>
+
+    <!-- <h2 class="page-header">Comparison</h2> -->
+
+    <div class="wrapper">
+        <div class="searchitem">
+            <form action="" class="form">
+                <input type="text" class="searchinput" placeholder="Search" autocomplete="off" onkeyup="search()">
+                <button class="submit" type="submit" placehodler="Search">Search</button>
+            </form>
+        </div>
+
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr></tr>
+                </tbody>
+            </table>
+        </div>
+    </div> 
+</body>
+
+</html>
+
+//comparison.css
+
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Caladea' serif;
+}
+
+/* navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #1f2833;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    color: #45a29e;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: smaller;
+}
+
+.navbar form {
+    float: right;
+    margin-top: 10px;
+    margin-right: 16px;
+}
+
+.navbar input[type=text] {
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.navbar button {
+    background-color: #45a29e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: #45a049;
+}
+
+/* background */
+body {
+    background: linear-gradient(0deg, rgba(11, 12, 16, 0.95), rgba(11, 12, 16, 0.95)), url(../images/background.jpeg);
+    justify-content: left;
+    position:relative;
+}
+
+/* search/filter bar */
+
+.searchitem {
+    display: flex;
+    position: absolute;
+    transform: translate(-12.9%, -90%);
+    
+}
+
+.form {
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+    margin-left: 100 auto;
+}
+
+.searchinput {
+    font-size: small;
+    height: 30px;
+}
+
+button.submit {
+    font-size: 15px;
+    padding: 4px;
+}
+
+/* table */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 85%;
+    background-color: fff;
+    min-height: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    position: absolute;
+    transform: translate(9%, 30%);
+}
+
+table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+
+}
+
+thead {
+    background-color: #f5f5f5;
+    color: aqua;
+
+}
+
+td, th {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    color: #45a29e;
+
+}
+
+---------------------------------
