@@ -1496,3 +1496,13 @@ td, th {
 }
 
 --------------------------------------------------
+
+css navbar updated for all pages:
+.navbar {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #1f2833;
+    font-family: 'Caladea', Arial, Helvetica, sans-serif;
+}
