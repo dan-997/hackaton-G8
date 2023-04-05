@@ -12,24 +12,70 @@ Team member:
 
 //NavBar
 
-.prev:before,
-.next:before {
-  content: '';
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: solid white;
-  border-width: 0 2px 2px 0;
-}
 
-.next:before {
-  transform: rotate(-45deg);
-  margin-left: 8px;
-  border-width: 0 2px 2px 0;
-}
+</html>
+<html>
+  <head>
+    <style>
+      /* Style the navbar */
+      .navbar {
+        overflow: hidden;
+        background-color: #333;
+        font-family: Arial, Helvetica, sans-serif;
+      }
 
-.prev:before {
-  transform: rotate(135deg);
-  margin-right: 8px;
-  border-width: 0 2px 2px 0;
-}
+      /* Navbar links */
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      /* Navbar search */
+      .navbar form {
+        float: right;
+        margin-top: 10px;
+        margin-right: 16px;
+      }
+
+      .navbar input[type=text] {
+        padding: 6px;
+        border: none;
+        border-radius: 4px;
+        margin-right: 10px;
+      }
+
+      .navbar button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .navbar button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="#">Graph</a>
+      <a href="#">Input</a>
+      <a href="#">Comparison</a>
+      <a href="#">About Us</a>
+      
+
+      <form>
+        <input type="text" placeholder="Search...">
+        <button type="submit">Go</button>
+      </form>
+    </div>
+
+  </body>
+</html>
