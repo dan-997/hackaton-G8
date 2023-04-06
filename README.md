@@ -1506,3 +1506,337 @@ css navbar updated for all pages:
     background-color: #1f2833;
     font-family: 'Caladea', Arial, Helvetica, sans-serif;
 }
+
+
+
+----------------------------------------------------
+
+INPUT PAGE:
+
+//html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/inputpage.css" class="stylesheet">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="navbar">
+        <a href="./homepage.html" class="href">Home</a>
+        <a href="./graphpage.html" class="href">Graph</a>
+        <a href="./inputpage.html" class="href">Input</a>
+        <a href="./comparisonpage.html" class="href">Comparison</a>
+        <a href="#" class="href">About us</a>
+        <form action=""><input type="text" placeholder="Search..."><button type="submit" class="submit">Go</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <!-- <div class="card-header">
+                <h3 class="card-title">Upload image of your receipt</h3>
+            </div> -->
+
+            <div class="drop-area">
+                <div class="file-drop">
+                    <form class="my-form">
+                        <div class="drop-label">
+                            <p>Upload your image here</p>
+                        </div>
+                        <div class="drop-input">
+                            <input type="file" id="imageupload" multiple accept="image/*" onChange="">
+                        </div>
+                    </form>
+                    <div class="drop-label-child">
+                        <label class="button-file" for="imageupload">Browse</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- imageupload progress bar -->
+            <div class="progbar">
+                <div class="progress-bar-container">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+
+            <!-- camera function -->
+            <div class="camera-function">
+                <video id="video"></video>
+                <button id="capture">Capture</button>
+                <canvas id="canvas"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../javascript/inputpage.js"></script>
+</body>
+
+</html>
+
+//css
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Caladea' serif;
+    color: #fff;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(11, 12, 16, 0.98), rgba(11, 12, 16, 0.98)), url(../images/background.jpeg);
+}
+
+/* navbar */
+.navbar {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #1f2833;
+    font-family: 'Caladea', Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    color: #45a29e;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: smaller;
+}
+
+.navbar form {
+    float: right;
+    margin-top: 10px;
+    margin-right: 16px;
+}
+
+.navbar input[type=text] {
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.navbar button {
+    background-color: #45a29e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: #45a049;
+}
+
+
+
+/* ----card---- */
+
+.card {
+    flex-direction: column;
+    min-height: 250px;
+    border-radius: 15px;
+    background: #0b0c10;
+    width: 80%;
+    box-shadow: 15px 15px 30px rgba(91, 239, 215, 0.2),
+        -15px -15px 30px rgba(102, 252, 241, 0.3);
+}
+
+/* .card-title {
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 10px;
+    color: #fff;
+    font-family: 'Caladea', serif;
+} */
+
+/* ---file drop--- */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.file-drop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #c5c6c7;
+    border-radius: 10px;
+    width: 60%;
+    height: 200px;
+    margin: 50px auto;
+    font-size: 20px;
+    line-height: 200px;
+    position: relative;
+
+}
+
+.file-drop.highlight {
+    background-color: #f7f7f7;
+    border-color: #999;
+}
+
+.button-file {
+    display: block;
+    /* background-color: aqua; */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    position: absolute;
+    bottom: 10px;
+    align-self: center;
+
+}
+
+.drop-label {
+    margin-bottom: 10px;
+}
+
+.drop-label-child {
+    transform: translate(-50px, 50px);
+}
+
+.drop-input input[type="file"] {
+    display: none;
+}
+
+
+
+/* .form-upload label {
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Caladea', serif;
+    font-weight: light;
+} */
+
+/* .progress-bar-container {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    height: 20px;
+  }
+  
+  .progress-bar {
+    background-color: #007bff;
+    height: 100%;
+    width: 0;
+    transition: width 0.6s ease;
+  } */
+
+.progress-bar {
+    display: none;
+    width: 60%;
+    height: 20px;
+    margin: 10px auto;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #45a049;
+    border-radius: 10px;
+}
+
+.uploading .file-drop {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.uploading .progress-bar {
+    display: block;
+}
+
+.uploading .button-file {
+    display: none;
+}
+
+.camera-function {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+#video {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+#capture {
+    background-color: #45a049;
+    border: none;
+    color: #f5f5f5;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#canvas {
+    display: block;
+    max-width: 640px;
+    height: auto;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    transform: translatey(-245px);
+}
+
+//js
+const fileInput = document.querySelector('#imageupload');
+const progressBar = document.querySelector('.progress');
+const progressContainer = document.querySelector('.progress-bar');
+
+fileInput.addEventListener('change', (e) => {
+  const file = e.target.files[0];
+  const formData = new FormData();
+  formData.append('file', file);
+
+  progressContainer.classList.add('uploading');
+
+  fetch('/upload', {
+    method: 'POST',
+    body: formData
+  }).then((response) => {
+    progressContainer.classList.remove('uploading');
+    progressContainer.style.display = 'none';
+    fileInput.value = '';
+  });
+});
+
+function updateProgress(event) {
+  if (event.lengthComputable) {
+    const percent = (event.loaded / event.total) * 100;
+    progressBar.style.width = percent + '%';
+  }
+}
