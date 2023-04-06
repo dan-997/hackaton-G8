@@ -1840,3 +1840,347 @@ function updateProgress(event) {
     progressBar.style.width = percent + '%';
   }
 }
+
+
+--------------------------------------------------------------------------------------
+background // 
+![background](https://user-images.githubusercontent.com/127367575/230296874-25244086-4acc-4ff1-9c79-17acb128997e.jpeg)
+
+--------------------------------------------------------------------------------------
+
+//about page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/aboutpage.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="./homepage.html" class="href">Home</a>
+        <a href="./graphpage.html" class="href">Graph</a>
+        <a href="./inputpage.html" class="href">Input</a>
+        <a href="./comparisonpage.html" class="href">Comparison</a>
+        <a href="#" class="href">About us</a>
+        <form action=""><input type="text" placeholder="Search..."><button type="submit" class="submit">Go</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="headerdiv">
+            <header class="header">About us</header>
+        </div>
+
+        <div class="description">
+            <p> This app aims to Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <br>
+        <hr>
+        <br>
+
+        <div class="mission-div">
+            <div class="mission-title">
+                <h2>Our Mission</h2>
+            </div>
+
+            <div class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet obcaecati laudantium perferendis iusto quas rem esse assumenda quo porro soluta aut eaque illum, accusantium optio tempora repellendus quia adipisci veritatis.</p>
+            </div>
+            
+        </div>
+
+        <div class="futureplan-div">
+            <div class="plan-title">
+                <h2>Future Vision</h2>
+            </div>
+
+            <div class="description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+        </div>
+
+        <div class="members">
+            <div class="title-members">
+                <h2>Our Members</h2>
+            </div>
+            
+            <div class="row">
+                <div class="col">
+                    <img src="https://th.bing.com/th/id/R.aa87274dccc94d1320f99ad87304b8cc?rik=FZ4kCne%2bm8BRZA&riu=http%3a%2f%2fwww.adamanthr.com%2fwp-content%2fuploads%2f2016%2f04%2fdummy-man-570x570.png&ehk=BaZj0MLfrYDkfnYFaOp3HCC5ZX%2fq8lmzYVpaq4WYyI0%3d&risl=&pid=ImgRaw&r=0"/>
+                    <div class="texts">
+                        <h3>Lorem</h3>
+                        <p> role: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione fugit iusto quibusdam suscipit aperiam quod eum incidunt molestias.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="https://th.bing.com/th/id/R.aa87274dccc94d1320f99ad87304b8cc?rik=FZ4kCne%2bm8BRZA&riu=http%3a%2f%2fwww.adamanthr.com%2fwp-content%2fuploads%2f2016%2f04%2fdummy-man-570x570.png&ehk=BaZj0MLfrYDkfnYFaOp3HCC5ZX%2fq8lmzYVpaq4WYyI0%3d&risl=&pid=ImgRaw&r=0"/>
+                    <div class="texts">
+                        <h3>Lorem</h3>
+                        <p> role: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione fugit iusto quibusdam suscipit aperiam quod eum incidunt molestias.</p>
+                    </div>
+
+                </div>
+                <div class="col">
+                    <img src="https://th.bing.com/th/id/R.aa87274dccc94d1320f99ad87304b8cc?rik=FZ4kCne%2bm8BRZA&riu=http%3a%2f%2fwww.adamanthr.com%2fwp-content%2fuploads%2f2016%2f04%2fdummy-man-570x570.png&ehk=BaZj0MLfrYDkfnYFaOp3HCC5ZX%2fq8lmzYVpaq4WYyI0%3d&risl=&pid=ImgRaw&r=0"/>
+                    <div class="texts">
+                        <h3>Lorem</h3>
+                        <p> role: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione fugit iusto quibusdam suscipit aperiam quod eum incidunt molestias.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="https://th.bing.com/th/id/R.aa87274dccc94d1320f99ad87304b8cc?rik=FZ4kCne%2bm8BRZA&riu=http%3a%2f%2fwww.adamanthr.com%2fwp-content%2fuploads%2f2016%2f04%2fdummy-man-570x570.png&ehk=BaZj0MLfrYDkfnYFaOp3HCC5ZX%2fq8lmzYVpaq4WYyI0%3d&risl=&pid=ImgRaw&r=0"/>
+                    <div class="texts">
+                        <h3>Lorem</h3>
+                        <p> role: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione fugit iusto quibusdam suscipit aperiam quod eum incidunt molestias.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="https://th.bing.com/th/id/R.aa87274dccc94d1320f99ad87304b8cc?rik=FZ4kCne%2bm8BRZA&riu=http%3a%2f%2fwww.adamanthr.com%2fwp-content%2fuploads%2f2016%2f04%2fdummy-man-570x570.png&ehk=BaZj0MLfrYDkfnYFaOp3HCC5ZX%2fq8lmzYVpaq4WYyI0%3d&risl=&pid=ImgRaw&r=0"/>
+                    <div class="texts">
+                        <h3>Lorem</h3>
+                        <p> role: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione fugit iusto quibusdam suscipit aperiam quod eum incidunt molestias.</p>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>
+
+
+-------
+//css
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Caladea' serif;
+    color: #fff;
+}
+
+/* navbar */
+.navbar {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #1f2833;
+    font-family: 'Caladea', Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    color: #45a29e;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: smaller;
+}
+
+.navbar form {
+    float: right;
+    margin-top: 10px;
+    margin-right: 16px;
+}
+
+.navbar input[type=text] {
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.navbar button {
+    background-color: #45a29e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: #45a049;
+}
+
+
+/* body */
+
+body {
+    background: linear-gradient(0deg, rgba(11, 12, 16, 0.95), rgba(11, 12, 16, 0.95)), url(../images/background.jpeg);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    width: 90%;
+
+}
+
+/* header and desc */
+.headerdiv {
+    border: 2px solid #c5c6c7;
+    background-color: transparent;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 50px 50px 10px 50px;
+}
+
+.header {
+    color: #66fcf1;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.description {
+    width: 65%;
+    justify-content: center;
+}
+
+.description p {
+    font-size: 0.72rem;
+    justify-content: center;
+    text-align: center;
+    color: #c5c6c7;
+}
+
+/* mission */
+.mission-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+}
+
+.mission-title {
+    border: 1px solid #c5c6c7;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 30px 50px 10px 50px;
+    align-self: center;
+}
+
+.mission-title h2 {
+    font-size: 1.2rem;
+    color: #45a29e;
+}
+
+.mission-div .description {
+    width: 70%;
+    justify-content: center;
+    align-self: center;
+}
+
+.mission-div .description p {
+    font-size: 0.78rem;
+    justify-content: center;
+    text-align: center;
+    color: #c5c6c7;
+}
+
+/* future vision */
+.futureplan-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 70%;
+}
+
+.plan-title {
+    border: 1px solid #c5c6c7;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 50px 50px 10px 50px;
+    align-self: center;
+}
+
+.plan-title h2 {
+    font-size: 1.2rem;
+    color: #45a29e;
+}
+
+.futureplan-div .description {
+    width: 70%;
+    justify-content: center;
+    align-self: center;
+}
+
+.futureplan-div .description p {
+    font-size: 0.78rem;
+    justify-content: center;
+    text-align: center;
+    color: #c5c6c7;
+}
+
+/* members */
+
+.members {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.title-members {
+    border: 1px solid #c5c6c7;
+    width: fit-content;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 50px 50px 10px 50px;
+    align-self: center;
+}
+
+.title-members h2 {
+    font-size: 1.2rem;
+    color: #45a29e;
+}
+
+.col {
+    margin: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    align-items: center;
+}
+
+.col h3 {
+    font-size: 1.2rem;
+    color: rgb(40, 140, 130);
+}
+
+.col p {
+    font-size: 0.8rem;
+    color: #c5c6c7;
+}
+
+.col img {
+    width: 20%;
+    height: auto;
+    border: 3px solid #1f2833;
+    border-radius: 50px;
+    margin-right: 20px;
