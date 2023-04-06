@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Page</title>
+    <link rel="stylesheet" href="../css/homepage.css" class="stylesheet">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="navbar">
+        <a href="./HomePage.html" class="href">Home</a>
+        <a href="./InputPage.html" class="href">Input</a>
+        <a href="./GraphPage.html" class="href">Graph</a>
+        <a href="./ComparisonPage.html" class="href">Comparison</a>
+        <a href="./AboutPage.html" class="href">About us</a>
+        <form action=""><input type="text" placeholder="Search..."><button type="submit" class="submit">Go</button>
+        </form>
+    </div> 
+<div class="container">
+    <div class="card">
+        <!-- <div class="card-header">
+            <h3 class="card-title">Upload image of your receipt</h3>
+        </div> -->
+
+        <div class="drop-area">
+            <div class="file-drop">
+                <form class="my-form">
+                    <div class="drop-label">
+                        <p>Upload your image here</p>
+                    </div>
+                    <div class="drop-input">
+                        <input type="file" id="imageupload" multiple accept="image/*" onChange="">
+                    </div>
+                </form>
+                <div class="drop-label-child">
+                    <label class="button-file" for="imageupload">Browse</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- imageupload progress bar -->
+        <div class="progbar">
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+
+        <!-- camera function -->
+        <div class="camera-function">
+            <video id="video"></video>
+            <button id="capture">Capture</button>
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+</div>
+
+<footer>           
+    <p>&copy; 2023 Group_8 Production. All rights reserved XD.</p>
+</footer>
+
+<script src="../javascript/InputPage.js"></script>
+    
+</body>
