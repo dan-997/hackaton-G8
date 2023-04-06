@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/graphpage.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="./homepage.html" class="href">Home</a>
+        <a href="./graphpage.html" class="href">Graph</a>
+        <a href="#" class="href">Input</a>
+        <a href="./comparisonpage.html" class="href">Comparison</a>
+        <a href="#" class="href">About us</a>
+        <form action=""><input type="text" placeholder="Search..."><button type="submit" class="submit">Go</button>
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-7">
+            <div class="graph">
+                <body>
+                    <canvas id="myChart"></canvas>
+                    <script>
+                        var ctx = document.getElementById('myChart').getContext('2d');
+                        var myChart = new Chart(ctx, {
+                            type: 'line',
+                            data: {
+                                labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+                                datasets: [{
+                                    label: 'Savings',
+                                    data: [500, 800, 650, 1000, 900, 750],
+                                    backgroundColor: 'green',
+                                    borderColor: 'green',
+                                    borderWidth: 1,
+                                    fill: false
+                                }, {
+                                    label: 'Spending',
+                                    data: [200, 500, 300, 600, 400, 700],
+                                    backgroundColor: 'red',
+                                    borderColor: 'red',
+                                    borderWidth: 1,
+                                    fill: false
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                            beginAtZero: true
+                                        }
+                                    }]
+                                }
+                            }
+                        });
+                    </script>
+                </body>
+            </div>
+        </div>
+
+        
+        <div class="col-5">
+            <div class="summary" >
+               <p>You are on track with your finances~</p>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

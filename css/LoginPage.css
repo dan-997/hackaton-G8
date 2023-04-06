@@ -1,0 +1,296 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px
+}
+
+body {
+    background: linear-gradient(0deg, rgba(11, 12, 16, 0.95), rgba(11, 12, 16, 0.95)), url(../images/background.jpeg); 
+}
+
+ /* .div {
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    display: inline-flex;
+    color: #66fcf1;
+    font-weight: bold;
+
+}  */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #1f2833;
+    max-height: 480px;
+    overflow: hidden;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 7px 7px 10px 3px #45a29e;
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 3.65px;
+    justify-content: center;
+}
+
+#chk {
+    display: none;
+}
+
+.errormessage{
+    color: red;
+    font-size:10px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(1500%);
+}
+.login {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.login label {
+    margin: 24% 0 5%;
+}
+
+label {
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    font-family: 'Caladea', serif;
+}
+
+#login {
+    color: #66fcf1;
+}
+
+#register {
+    color: #1f2833;
+}
+
+.input {
+    width: 95%;
+    height: 30px;
+    padding: 10px;
+    background-color: #e0dede;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.register {
+    background: #66fcf1;
+    border-radius: 20% / 5%;
+    transform: translateY(5%);
+    transition:.8s ease-in-out;
+}
+
+.register label {
+    color: #66fcf1;
+    transform: scale(.6); 
+}
+
+#chk:checked ~ .register {
+    transform: translateY(-60%);
+}
+
+#chk:checked ~ .register label{
+    transform:scale(1);
+    margin: 10% 0 5%;
+}
+
+#chk:checked ~ .login label {
+    transform: scale(.6);
+    margin: 5% 0 5%;
+}
+
+.form button {
+    width: 85%;
+    height: 40px;
+    margin: 12px auto 10%;
+    color:#fff;
+    background: #45a29e;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s ease-in;
+    font-size: 15px;
+}
+
+.form button:hover {
+    background-color: rgb(75,175,178);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px
+}
+
+body {
+    background: linear-gradient(0deg, rgba(11, 12, 16, 0.95), rgba(11, 12, 16, 0.95)), url(../images/background.jpeg); 
+}
+
+ /* .div {
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    display: inline-flex;
+    color: #66fcf1;
+    font-weight: bold;
+
+}  */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #1f2833;
+    max-height: 480px;
+    overflow: hidden;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 7px 7px 10px 3px #45a29e;
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 3.65px;
+    justify-content: center;
+}
+
+#chk {
+    display: none;
+}
+
+.errormessage{
+    color: red;
+    font-size:10px;
+    display: flex;
+    justify-content: center;
+    transform: translateY(1500%);
+}
+.login {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.login label {
+    margin: 24% 0 5%;
+}
+
+label {
+    font-size: 2rem;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    font-family: 'Caladea', serif;
+}
+
+#login {
+    color: #66fcf1;
+}
+
+#register {
+    color: #1f2833;
+}
+
+.input {
+    width: 95%;
+    height: 30px;
+    padding: 10px;
+    background-color: #e0dede;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.register {
+    background: #66fcf1;
+    border-radius: 20% / 5%;
+    transform: translateY(5%);
+    transition:.8s ease-in-out;
+}
+
+.register label {
+    color: #66fcf1;
+    transform: scale(.6); 
+}
+
+#chk:checked ~ .register {
+    transform: translateY(-60%);
+}
+
+#chk:checked ~ .register label{
+    transform:scale(1);
+    margin: 10% 0 5%;
+}
+
+#chk:checked ~ .login label {
+    transform: scale(.6);
+    margin: 5% 0 5%;
+}
+
+.form button {
+    width: 85%;
+    height: 40px;
+    margin: 12px auto 10%;
+    color:#fff;
+    background: #45a29e;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: .2s ease-in;
+    font-size: 15px;
+}
+
+.form button:hover {
+    background-color: rgb(75,175,178);
+}

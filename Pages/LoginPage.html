@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/Loginpage.css" class="stylesheet">
+</head>
+
+<body>
+	<!-- <h3 class="title">App Name</h3> -->
+	<div class="container">
+		<div class="main">
+			<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="login">
+				<div class="errormessage" id="errormessage"></div>
+				<form class="form" id="loginform">
+					<label for="chk" aria-hidden="true" id="login">Login</label>
+					<input class="input" type="text" name="username" placeholder="Username" id="username" required="">
+					<input class="input" type="password" name="pswd" placeholder="Password" id="password" required="">
+					<button id="btn">Log in</button>
+				</form>
+			</div>
+
+			<div class="register">
+				<form class="form" id="regform">
+					<label for="chk" aria-hidden="true" id="register">Register</label>
+					<input class="input" type="text" name="txt" placeholder="Username" required="" id="un">
+					<input class="input" type="email" name="email" placeholder="Email" required="" id="email">
+					<input class="input" type="password" name="pswd" placeholder="Password" required="" id="pw">
+					<button>Register</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="../javascript/Loginpage.js"></script>
+</body>
+</html>
+

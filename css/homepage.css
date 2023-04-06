@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Caladea' serif;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(11, 12, 16, 0.98), rgba(11, 12, 16, 0.98)), url(../images/background.jpeg);
+}
+
+/* navbar */
+.navbar {
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #1f2833;
+    font-family: 'Caladea', Arial, Helvetica, sans-serif;
+}
+
+
+.navbar a {
+    color: #45a29e;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: smaller;
+}
+
+.navbar form {
+    float: right;
+    margin-top: 10px;
+    margin-right: 16px;
+}
+
+.navbar input[type=text] {
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.navbar button {
+    background-color: #45a29e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: #45a049;
+}
+
+
+/* default stylings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* provides background color to body */
+/* body {
+    background-color: black;
+} */
+
+/* ----- container stylings: 
+        -> centers the whole content of the page
+        -> defines width and height for container ----- */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 800px;
+    height: 500px;
+}
+
+/* ----- end of container stylings ----- */
+
+/* provides padding to main heading */
+.main-heading {
+    color: #66fcf1;
+    padding: 2rem 0 2rem 0;
+    text-transform: uppercase;
+    font-weight: bolder;
+    position:relative;
+}
+
+.main-heading--shadow::before {
+    color: #1f2833;
+    content:attr(data-text);
+    margin-top: 0.875rem;
+    opacity: 0.7;
+    position: absolute;
+    transform: perspective(200px) rotateX(40deg) scale(0.83);
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+}
+
+/* ----- carousel content stylings ----- */
+/* places the carousel content on center of the carousel */
+.carousel-content {
+    position: absolute;
+    /*to center the content horizontally and vertically*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 50;
+}
+
+.carousel-heading {
+    font-size: 3rem;
+    color: #308d46;
+    margin-bottom: 1rem;
+}
+
+/*----- end of carousel content stylings ----- */
+
+/* ----- slideshow stylings ----- */
+.slideshow {
+    height: 70%;
+    overflow: hidden;
+    /* to hide slides in x-direction */
+    position: relative;
+}
+
+/* wrapper which wraps all the slideshow images stylings */
+.slideshow-wrapper {
+    display: flex;
+    /* We give it width as 400% because we are making a 
+               4 image carousel. If you want to make for example, 
+               5 images carousel, then give width as 500%. */
+    width: 400%;
+    height: 100%;
+    position: relative;
+    /* you can change the animation settings from below */
+    animation: slideshow 20s infinite;
+}
+
+/* define width and height for images*/
+.slide {
+    width: 100%;
+    height: 100%;
+}
+
+.slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* @keyframes are used to provide animations
+           We make these settings for 4 image carousel.
+           Make modification according to your needs. */
+@keyframes slideshow {
+    0% {
+        left: 0;
+    }
+
+    10% {
+        left: 0;
+    }
+
+    15% {
+        left: -100%;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    30% {
+        left: -200%;
+    }
+
+    40% {
+        left: -200%;
+    }
+
+    45% {
+        left: -300%;
+    }
+
+    55% {
+        left: -300%;
+    }
+
+    60% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -100%;
+    }
+
+    85% {
+        left: -100%;
+    }
+
+    90% {
+        left: 0%;
+    }
+}
+
+/* ----- end of slideshow stylings ----- */
+
+/* ----- carousel control buttons stylings ----- */
+.slide-btn {
+    background-color: #bbb;
+    border-radius: 50%;
+    border: .2rem solid green;
+    width: 1.2rem;
+    height: 1.2rem;
+    outline: none;
+    cursor: pointer;
+    /* stylings for positioning the buttons at
+               the bottom of the carousel */
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 70;
+}
+
+/* As we provide position as absolute, 
+        the buttons places one over the other. 
+        So, we have to place them individually
+        at their correct positions. */
+.slide-btn-1 {
+    left: 45%;
+}
+
+.slide-btn-2 {
+    left: 50%;
+}
+
+.slide-btn-3 {
+    left: 55%;
+}
+
+.slide-btn-4 {
+    left: 60%;
+}
+
+/* When we focus on the particular button, 
+        the animation stops to that particular image 
+        to which the button is associated. */
+.slide-btn-1:focus~.slideshow-wrapper {
+    animation: none;
+    left: 0;
+}
+
+.slide-btn-2:focus~.slideshow-wrapper {
+    animation: none;
+    left: -100%;
+}
+
+.slide-btn-3:focus~.slideshow-wrapper {
+    animation: none;
+    left: -200%;
+}
+
+.slide-btn-4:focus~.slideshow-wrapper {
+    animation: none;
+    left: -300%;
+}
+
+/* when we focus on the button, the background color changes */
+.slide-btn:focus {
+    background-color: #308d46;
+}
+
+/* ----- end of carousel control buttons stylings ----- */
+
+/* content */
+.containers {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.card {
+    width: 80%;
+    min-height: 254px;
+    border-radius: 30px;
+    background: #0b0c10;
+    box-shadow: 15px 15px 30px rgba(91, 239, 215, 0.2),
+        -15px -15px 30px rgba(102, 252, 241, 0.3);
+}
+
+.card-content {
+    padding: 50px;
+    justify-content: center;
+    align-content: center;
+}
+
+h1 {
+    font-size: 2.2rem;
+    display: flex;
+    justify-content: center;
+    color: #66fcf2;
+    font-family: 'Caladea', serif;
+    font-style: italic;
+    margin: 10px;
+}
+
+p {
+    font-size: 0.7rem;
+    color: #45a29e;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    font-size: 1.1rem;
+    color: #45a29e;
+    text-align: center;
+}
+
+h4{
+    font-size: 0.8rem;
+    color: #c5c6c7;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card-footer {
+    color: #66fcf2;
+    font-size: 0.7rem;
+    text-align: center;
+    font-weight: lighter;
+}
