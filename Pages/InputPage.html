@@ -1,68 +1,118 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input Page</title>
-    <link rel="stylesheet" href="../css/homepage.css" class="stylesheet">
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/inputpage.css" class="stylesheet" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/tesseract.js@2.1.1/dist/tesseract.min.js"
+    ></script>
+  </head>
+  <body>
     <!-- navbar -->
     <div class="navbar">
-        <a href="./HomePage.html" class="href">Home</a>
-        <a href="./InputPage.html" class="href">Input</a>
-        <a href="./GraphPage.html" class="href">Graph</a>
-        <a href="./ComparisonPage.html" class="href">Comparison</a>
-        <a href="./AboutPage.html" class="href">About us</a>
-        <form action=""><input type="text" placeholder="Search..."><button type="submit" class="submit">Go</button>
-        </form>
-    </div> 
-<div class="container">
-    <div class="card">
-        <!-- <div class="card-header">
-            <h3 class="card-title">Upload image of your receipt</h3>
-        </div> -->
+      <a href="./index.html" class="href">Home</a>
+      <a href="./graphpage.html" class="href">Graph</a>
+      <a href="./inputpage.html" class="href">Input</a>
+      <a href="./comparisonpage.html" class="href">Comparison</a>
+      <a href="./aboutUs.html" class="href">About us</a>
+      <a href="./LoginPage.html" class="href">Login/Register</a>
+      <form action="">
+        <input type="text" placeholder="Search..." />
+        <button type="submit" class="submit">Go</button>
+      </form>
+    </div>
 
+    <div class="container">
+      <div class="card">
         <div class="drop-area">
-            <div class="file-drop">
-                <form class="my-form">
-                    <div class="drop-label">
-                        <p>Upload your image here</p>
-                    </div>
-                    <div class="drop-input">
-                        <input type="file" id="imageupload" multiple accept="image/*" onChange="">
-                    </div>
-                </form>
-                <div class="drop-label-child">
-                    <label class="button-file" for="imageupload">Browse</label>
-                </div>
+          <div class="file-drop">
+            <div class="drop-label">
+              <p>Upload your image here</p>
             </div>
-        </div>
-
-        <!-- imageupload progress bar -->
-        <div class="progbar">
-            <div class="progress-bar-container">
-                <div class="progress-bar"></div>
+            <div class="drop-input">
+              <input
+                type="file"
+                id="imageupload"
+                multiple
+                accept="image/*"
+                capture="camera"
+              />
             </div>
+            <div class="drop-label-child">
+              <label class="button-file" for="imageupload">Browse</label>
+            </div>
+          </div>
+          <div class="preview-container">
+            <img id="image-preview">
+          </div>
         </div>
 
         <!-- camera function -->
         <div class="camera-function">
-            <video id="video"></video>
-            <button id="capture">Capture</button>
-            <canvas id="canvas"></canvas>
+          <button type="button" id="convert-btn">Convert</button>
         </div>
+
+        <div id="text-output" style="color: aqua;"></div>
+      </div>
     </div>
-</div>
+    <h1 style="color: aqua; text-align:center; font-size:30px"> OR </h1>
+    <div class="container">
+      <div class="card">
+        <div class="drop-area">
+    <form style="text-align: center; margin-top:40px">
+      <label for="name">Location:</label>
+      <input style="margin-bottom: 20px;" type="text" id="name" name="name"><br>
 
-<footer>           
-    <p>&copy; 2023 Group_8 Production. All rights reserved XD.</p>
-</footer>
+      <label for="email">Category:</label>
+      <input style="margin-bottom: 20px;" type="text" id="email" name="email"><br>
 
-<script src="../javascript/InputPage.js"></script>
-    
-</body>
+      <label for="message">Total Price:</label>
+      <input style="margin-bottom: 20px " type="text" id="message" name="message"></textarea><br>
+
+      <input type="submit" id="convert-btn" value="Submit">
+    </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const imageInput = document.getElementById("imageupload");
+      const imagePreview = document.getElementById("image-preview");
+      const convertBtn = document.getElementById("convert-btn");
+      const textOutput = document.getElementById("text-output");
+
+      imageInput.addEventListener("change", () => {
+        if (imageInput.files && imageInput.files[0]) {
+          const reader = new FileReader();
+          reader.onload = (e) => {
+            imagePreview.src = e.target.result;
+          };
+          reader.readAsDataURL(imageInput.files[0]);
+        }
+      });
+
+      convertBtn.addEventListener("click", () => {
+        if (imageInput.files && imageInput.files[0]) {
+          const reader = new FileReader();
+          reader.onload = async (e) => {
+            const image = new Image();
+            image.src = e.target.result;
+            image.onload = async () => {
+              const { data: { text } } = await Tesseract.recognize(image);
+              textOutput.innerText = text;
+            };
+          };
+          reader.readAsDataURL(imageInput.files[0]);
+        }
+      });
+    </script>
+
+    <script src="../javascript/inputpage.js"></script>
+    <footer>
+      <p>&copy; 2023 Group_8 Production. All rights reserved XD.</p>
+    </footer>
+  </body>
+</html>

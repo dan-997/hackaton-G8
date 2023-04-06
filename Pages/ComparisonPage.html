@@ -5,18 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comparison Page</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../css/comparison.css">
 </head>
 
 <body>
     <div class="navbar">
-        <a href="./HomePage.html" class="href">Home</a>
-        <a href="./InputPage.html" class="href">Input</a>     
-        <a href="./GraphPage.html" class="href">Graph</a>
-        <a href="./ComparisonPage.html" class="href">Comparison</a>
-        <a href="./AboutPage.html" class="href">About us</a>
-        <form action=""><input type="text" placeholder="Search..."><button type="submit" class="submit">Go</button>
+        <a href="./index.html" class="href">Home</a>
+        <a href="./graphpage.html" class="href">Graph</a>
+        <a href="./inputPage.html" class="href">Input</a>
+        <a href="./comparisonpage.html" class="href">Comparison</a>
+        <a href="./aboutUs.html" class="href">About us</a>
+        <a href="./LoginPage.html" class="href">Login/Register</a>
+        <form action=""><input type="text" placeholder="(under maintainance)"><button type="submit" class="submit">Go</button>
         </form>
     </div>
 
@@ -24,11 +25,15 @@
 
     <div class="wrapper">
         <div class="searchitem">
-            <form action="" class="form">
+            <form action="" type="text" id="searchTerm" class="form" onsubmit="event.preventDefault(); displayData()">
                 <input type="text" class="searchinput" placeholder="Search" autocomplete="off" onkeyup="search()">
                 <button class="submit" type="submit" placehodler="Search">Search</button>
             </form>
         </div>
+
+        <tbody id="tableBody">
+            <tr></tr>
+        </tbody>        
 
         <div class="table">
             <table>
@@ -38,6 +43,9 @@
                         <th>Price</th>
                         <th>Location</th>
                     </tr>
+                    <tbody id="tableBody">
+                        <tr></tr>
+                    </tbody>                    
                 </thead>
                 <tbody>
                     <tr></tr>
@@ -45,11 +53,10 @@
             </table>
         </div>
     </div> 
-
+    <script src="../javascript/displayData.js"></script>
     <footer>
         <p>&copy; 2023 Group_8 Production. All rights reserved XD.</p>
-    </footer>
-
+      </footer>
 </body>
 
 </html>

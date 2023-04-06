@@ -1,92 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Graph Page</title>
-    <link rel="stylesheet" href="../css/graphpage.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/graphpage.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  </head>
-  <body>
+</head>
+<body>
     <div class="navbar">
-      <a href="./HomePage.html" class="href">Home</a>
-      <a href="./InputPage.html" class="href">Input</a>
-      <a href="./GraphPage.html" class="href">Graph</a>
-      <a href="./ComparisonPage.html" class="href">Comparison</a>
-      <a href="./AboutPage.html" class="href">About us</a>
-      <form action="">
-        <input type="text" placeholder="Search..." /><button
-          type="submit"
-          class="submit"
-        >
-          Go
-        </button>
-      </form>
+        <a href="./index.html" class="href">Home</a>
+        <a href="./graphpage.html" class="href">Graph</a>
+        <a href="./inputPage.html" class="href">Input</a>
+        <a href="./comparisonpage.html" class="href">Comparison</a>
+        <a href="./aboutUs.html" class="href">About us</a>
+        <a href="./LoginPage.html" class="href">Login/Register</a>
+        <form action=""><input type="text" placeholder="Search..."><button type="submit" class="submit">Go</button>
+        </form>
     </div>
     <div class="row">
-      <div class="col-7">
-        <div class="graph">
-          <body>
-            <canvas id="myChart"></canvas>
-            <script>
-              var ctx = document.getElementById("myChart").getContext("2d");
-              var myChart = new Chart(ctx, {
-                type: "line",
-                data: {
-                  labels: [
-                    "January",
-                    "February",
-                    "March",
-                    "April",
-                    "May",
-                    "June",
-                  ],
-                  datasets: [
-                    {
-                      label: "Savings",
-                      data: [500, 800, 650, 1000, 900, 750],
-                      backgroundColor: "green",
-                      borderColor: "green",
-                      borderWidth: 1,
-                      fill: false,
-                    },
-                    {
-                      label: "Spending",
-                      data: [200, 500, 300, 600, 400, 700],
-                      backgroundColor: "red",
-                      borderColor: "red",
-                      borderWidth: 1,
-                      fill: false,
-                    },
-                  ],
-                },
-                options: {
-                  scales: {
-                    yAxes: [
-                      {
-                        ticks: {
-                          beginAtZero: true,
-                        },
-                      },
-                    ],
-                  },
-                },
-              });
-            </script>
-          </body>
+        <div class="col-7">
+            <div class="graph">
+                <body>
+                    <canvas id="myChart"></canvas>
+                    <script>
+                        var ctx = document.getElementById('myChart').getContext('2d');
+                        var myChart = new Chart(ctx, {
+                            type: 'line',
+                            data: {
+                                labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+                                datasets: [{
+                                    label: 'Savings',
+                                    data: [500, 800, 650, 1000, 900, 750],
+                                    backgroundColor: 'green',
+                                    borderColor: 'green',
+                                    borderWidth: 1,
+                                    fill: false
+                                }, {
+                                    label: 'Spending',
+                                    data: [200, 500, 300, 600, 400, 700],
+                                    backgroundColor: 'red',
+                                    borderColor: 'red',
+                                    borderWidth: 1,
+                                    fill: false
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                    yAxes: [{
+                                        ticks: {
+                                            beginAtZero: true
+                                        }
+                                    }]
+                                }
+                            }
+                        });
+                    </script>
+                    <canvas id="myChart2" style="margin-left: 30px;"></canvas>
+    <script>
+      var ctx = document.getElementById('myChart2').getContext('2d');
+      var myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+          labels: ['Entertainment', 'Groceries', 'Others','Car Repair','Stationary','Utilities'],
+          datasets: [
+            {
+              label: 'Amount spent this month',
+              data: [350, 500, 150, 200, 50, 400],
+              backgroundColor: [
+                'rgba(255, 99, 71, 0.2)',
+                'rgba(0, 255, 0, 0.2)',
+                'rgba(0, 0, 255, 0.2)',
+                'rgba(255, 255, 0, 0.2)',
+                'rgba(0, 255, 255, 0.2)',
+                'rgba(255, 255, 255, 0.2)'
+              ],
+              borderColor: [
+                'rgba(0, 255, 255, 0.6)',
+                'rgba(0, 255, 255, 0.6)',
+                'rgba(0, 255, 255, 0.6)',
+                'rgba(0, 255, 255, 0.6)',
+                'rgba(0, 255, 255, 0.6)',
+                'rgba(0, 255, 255, 0.6)'
+              ],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    </script>
+            </div>
         </div>
-      </div>
-
-      <div class="col-5">
-        <div class="summary">
-          <p>You are on track with your finances~</p>
-        </div>
-      </div>
     </div>
-
     <footer>
-      <p>&copy; 2023 Group_8 Production. All rights reserved XD.</p>
-    </footer>
-  </body>
+        <p>&copy; 2023 Group_8 Production. All rights reserved XD.</p>
+      </footer>
+</body>
 </html>

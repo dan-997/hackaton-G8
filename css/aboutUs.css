@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-* { 
-    margin: 0; padding: 0; font-size: 20px; font-family: 'Caladea' serif; color: #fff; 
-}
-
-/* navbar */ 
-
-.navbar { overflow: hidden; position: sticky; top: 0; z-index: 100; background-color: #1f2833; font-family: 'Caladea', Arial, Helvetica, sans-serif; }
+* { margin: 0; padding: 0; font-size: 20px; font-family: 'Caladea' serif; color: #fff; }
+/* navbar */ .navbar { overflow: hidden; position: sticky; top: 0; z-index: 100; background-color: #1f2833; font-family: 'Caladea', Arial, Helvetica, sans-serif; }
 
 .navbar a { color: #45a29e; float: left; display: block; text-align: center; padding: 14px 16px; text-decoration: none; font-size: smaller; }
 
@@ -74,10 +69,9 @@ hr { width: 90%;
 
 .col p { font-size: 0.8rem; color: #c5c6c7; }
 
-.col img { width: 20%; height: auto; border: 3px solid #1f2833; border-radius: 50px; margin-right: 20px;
+.col img { width: 20%; height: auto; border: 3px solid #1f2833; border-radius: 50px; margin-right: 20px; }
 
-}
-
+/* --footer--*/
 footer{
     display: flex;
     justify-content: center;

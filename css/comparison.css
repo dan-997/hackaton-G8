@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+a { color: inherit; } 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -123,6 +126,7 @@ td, th {
 
 }
 
+
 footer{
     position: fixed;
     bottom: 0;
@@ -131,7 +135,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 footer p {
     color:#66fcf1;
