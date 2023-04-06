@@ -201,3 +201,13 @@ body {
     transform: translatey(-245px);
 }
 
+/* --footer--*/
+footer{
+    display: flex;
+    justify-content: center;
+}
+footer p {
+    color:#66fcf1;
+    font-size: 10px;
+}
+
