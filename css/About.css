@@ -77,3 +77,12 @@ hr { width: 90%;
 .col img { width: 20%; height: auto; border: 3px solid #1f2833; border-radius: 50px; margin-right: 20px;
 
 }
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+footer p {
+    color:#66fcf1;
+    font-size: 10px;
+}
