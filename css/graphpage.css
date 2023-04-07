@@ -94,8 +94,8 @@ body {
     transform: translate(5%, 20%);
     margin: 28px;
     background-color: #0b0c10;
-    box-shadow: 15px 15px 30px rgba(91, 239, 215, 0.1),
-    -10px -10px 20px rgba(102, 252, 241, 0.1);
+    /* box-shadow: 15px 15px 30px rgba(91, 239, 215, 0.1),
+    -10px -10px 20px rgba(102, 252, 241, 0.1); */
 }
 
 .col-5 {
@@ -117,6 +117,6 @@ body {
     transform: translateY(20%);
     color: #c5c6c7;
     background-color: #0b0c10;
-    box-shadow: 15px 15px 30px rgba(91, 239, 215, 0.1),
-    -10px -10px 20px rgba(102, 252, 241, 0.1);
+    /* box-shadow: 15px 15px 30px rgba(91, 239, 215, 0.1),
+    -10px -10px 20px rgba(102, 252, 241, 0.1); */
 }

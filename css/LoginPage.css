@@ -51,7 +51,7 @@ body {
     overflow: hidden;
     width: 400px;
     border-radius: 12px;
-    box-shadow: 7px 7px 10px 3px #45a29e;
+    /* box-shadow: 7px 7px 10px 3px #45a29e; */
     
 }
 
@@ -199,7 +199,7 @@ body {
     overflow: hidden;
     width: 400px;
     border-radius: 12px;
-    box-shadow: 7px 7px 10px 3px #45a29e;
+    /* box-shadow: 7px 7px 10px 3px #45a29e; */
     
 }
 

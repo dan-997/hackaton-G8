@@ -126,7 +126,7 @@ body {
     position:relative;
 }
 
-.main-heading--shadow::before {
+/* .main-heading--shadow::before {
     color: #1f2833;
     content:attr(data-text);
     margin-top: 0.875rem;
@@ -134,7 +134,7 @@ body {
     position: absolute;
     transform: perspective(200px) rotateX(40deg) scale(0.83);
     z-index: -1;
-}
+} */
 
 .content {
     position: relative;
@@ -332,8 +332,8 @@ body {
     min-height: 254px;
     border-radius: 30px;
     background: #0b0c10;
-    box-shadow: 15px 15px 30px rgba(91, 239, 215, 0.2),
-        -15px -15px 30px rgba(102, 252, 241, 0.3);
+    /* box-shadow: 15px 15px 30px rgba(91, 239, 215, 0.2),
+        -15px -15px 30px rgba(102, 252, 241, 0.3); */
 }
 
 .card-content {

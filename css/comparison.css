@@ -101,8 +101,8 @@ button.submit {
     border: 1px solid #1f2833;
     position: absolute;
     transform: translate(9%, 30%);
-    box-shadow: 15px 15px 30px rgba(91, 239, 215, 0.2),
-    -10px -10px 20px rgba(102, 252, 241, 0.3);
+    /* box-shadow: 15px 15px 30px rgba(91, 239, 215, 0.2),
+    -10px -10px 20px rgba(102, 252, 241, 0.3); */
 }
 
 table {
