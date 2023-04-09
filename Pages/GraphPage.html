@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,20 +9,39 @@
     <link rel="stylesheet" href="../css/graphpage.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
+    <!-- navbar -->
     <div class="navbar">
-        <a href="./index.html" class="href">Home</a>
-        <a href="./graphpage.html" class="href">Graph</a>
-        <a href="./inputPage.html" class="href">Input</a>
-        <a href="./comparisonpage.html" class="href">Comparison</a>
-        <a href="./aboutUs.html" class="href">About us</a>
-        <a href="./LoginPage.html" class="href">Login/Register</a>
-        <form action=""><input type="text" placeholder="Search..."><button type="submit" class="submit">Go</button>
+        <a href="#" class="logo"><img src="../images/bblogo2.png" style="width:90px;"></a>
+
+        <form action="">
+            <input type="text" placeholder="(under maintainance)">
+            <button type="submit" class="submit"><img src="https://img.icons8.com/ios-glyphs/512/search.png" id="search"
+                    alt="search icon" /></button>
         </form>
+
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+
+        <div class="nav__link hide">
+            <a href="./index.html" class="href">Home</a>
+            <a href="./inputPage.html" class="href">Input</a>
+            <a href="./graphpage.html" class="href">Graph</a>
+            <a href="./comparisonpage.html" class="href">Comparison</a>
+            <a href="./aboutUs.html" class="href">About us</a>
+            <a href="./LoginPage.html" class="href">Login/Register</a>
+        </div>
+
+
     </div>
     <div class="row">
         <div class="col-7">
             <div class="graph">
+
                 <body>
                     <canvas id="myChart"></canvas>
                     <script>
@@ -58,50 +78,60 @@
                         });
                     </script>
                     <canvas id="myChart2" style="margin-left: 30px;"></canvas>
-    <script>
-      var ctx = document.getElementById('myChart2').getContext('2d');
-      var myChart = new Chart(ctx, {
-        type: 'pie',
-        data: {
-          labels: ['Entertainment', 'Groceries', 'Others','Car Repair','Stationary','Utilities'],
-          datasets: [
-            {
-              label: 'Amount spent this month',
-              data: [350, 500, 150, 200, 50, 400],
-              backgroundColor: [
-                'rgba(255, 99, 71, 0.2)',
-                'rgba(0, 255, 0, 0.2)',
-                'rgba(0, 0, 255, 0.2)',
-                'rgba(255, 255, 0, 0.2)',
-                'rgba(0, 255, 255, 0.2)',
-                'rgba(255, 255, 255, 0.2)'
-              ],
-              borderColor: [
-                'rgba(0, 255, 255, 0.6)',
-                'rgba(0, 255, 255, 0.6)',
-                'rgba(0, 255, 255, 0.6)',
-                'rgba(0, 255, 255, 0.6)',
-                'rgba(0, 255, 255, 0.6)',
-                'rgba(0, 255, 255, 0.6)'
-              ],
-              borderWidth: 1,
-            },
-          ],
-        },
-        options: {
-          scales: {
-            y: {
-              beginAtZero: true,
-            },
-          },
-        },
-      });
-    </script>
+                    <script>
+                        var ctx = document.getElementById('myChart2').getContext('2d');
+                        var myChart = new Chart(ctx, {
+                            type: 'pie',
+                            data: {
+                                labels: ['Entertainment', 'Groceries', 'Others', 'Car Repair', 'Stationary', 'Utilities'],
+                                datasets: [
+                                    {
+                                        label: 'Amount spent this month',
+                                        data: [350, 500, 150, 200, 50, 400],
+                                        backgroundColor: [
+                                            'rgba(255, 99, 71, 0.2)',
+                                            'rgba(0, 255, 0, 0.2)',
+                                            'rgba(0, 0, 255, 0.2)',
+                                            'rgba(255, 255, 0, 0.2)',
+                                            'rgba(0, 255, 255, 0.2)',
+                                            'rgba(255, 255, 255, 0.2)'
+                                        ],
+                                        borderColor: [
+                                            'rgba(0, 255, 255, 0.6)',
+                                            'rgba(0, 255, 255, 0.6)',
+                                            'rgba(0, 255, 255, 0.6)',
+                                            'rgba(0, 255, 255, 0.6)',
+                                            'rgba(0, 255, 255, 0.6)',
+                                            'rgba(0, 255, 255, 0.6)'
+                                        ],
+                                        borderWidth: 1,
+                                    },
+                                ],
+                            },
+                            options: {
+                                scales: {
+                                    y: {
+                                        beginAtZero: true,
+                                    },
+                                },
+                            },
+                        });
+                    </script>
             </div>
         </div>
     </div>
     <footer>
         <p>&copy; 2023 Group_8 Production. All rights reserved XD.</p>
-      </footer>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navlink = document.querySelector('.nav__link');
+
+        hamburger.addEventListener('click', () => {
+            navlink.classList.toggle('hide');
+        });
+    </script>
 </body>
+
 </html>
