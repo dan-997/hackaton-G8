@@ -10,18 +10,36 @@
 </head>
 
 <body>
+    <!-- navbar -->
     <div class="navbar">
-        <a href="./index.html" class="href">Home</a>
-        <a href="./graphpage.html" class="href">Graph</a>
-        <a href="./inputPage.html" class="href">Input</a>
-        <a href="./comparisonpage.html" class="href">Comparison</a>
-        <a href="./aboutUs.html" class="href">About us</a>
-        <a href="./LoginPage.html" class="href">Login/Register</a>
-        <form action=""><input type="text" placeholder="(under maintainance)"><button type="submit" class="submit">Go</button>
+        <a href="#" class="logo"><img src="../images/bblogo2.png" style="width:90px;"></a>
+
+        <form action="">
+            <input type="text" placeholder="(under maintainance)">
+            <button type="submit" class="submit"><img src="https://img.icons8.com/ios-glyphs/512/search.png" id="search"
+                    alt="search icon" /></button>
         </form>
+
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+
+        <div class="nav__link hide">
+            <a href="./index.html" class="href">Home</a>
+            <a href="./inputPage.html" class="href">Input</a>
+            <a href="./graphpage.html" class="href">Graph</a>
+            <a href="./comparisonpage.html" class="href">Comparison</a>
+            <a href="./aboutUs.html" class="href">About us</a>
+            <a href="./LoginPage.html" class="href">Login/Register</a>
+        </div>
+
+
     </div>
 
-    <!-- <h2 class="page-header">Comparison</h2> -->
+    <h2 class="page-header" style="text-align: center; color: aqua; margin-top: 50px; margin-bottom: 13px;">Price Comparison</h2>
+    <p style="text-align: center; color: rgb(230, 229, 241); font-size:small; margin-bottom: 5px;">Enter the item you wish to compare prices for in the search bar below. <br>The table will show the price of the item at each location.</p>
 
     <div class="wrapper">
         <div class="searchitem">
@@ -33,7 +51,7 @@
 
         <tbody id="tableBody">
             <tr></tr>
-        </tbody>        
+        </tbody>
 
         <div class="table">
             <table>
@@ -43,20 +61,28 @@
                         <th>Price</th>
                         <th>Location</th>
                     </tr>
-                    <tbody id="tableBody">
-                        <tr></tr>
-                    </tbody>                    
+                <tbody id="tableBody">
+                    <tr></tr>
+                </tbody>
                 </thead>
                 <tbody>
                     <tr></tr>
                 </tbody>
             </table>
         </div>
-    </div> 
+    </div>
     <script src="../javascript/displayData.js"></script>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navlink = document.querySelector('.nav__link');
+
+        hamburger.addEventListener('click', () => {
+            navlink.classList.toggle('hide');
+        });
+    </script>
     <footer>
         <p>&copy; 2023 Group_8 Production. All rights reserved XD.</p>
-      </footer>
+    </footer>
 </body>
 
 </html>
