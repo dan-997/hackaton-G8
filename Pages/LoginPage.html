@@ -2,44 +2,121 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="../css/Loginpage.css" class="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 
 <body>
-	<!-- <h3 class="title">App Name</h3> -->
-	<div class="container">
-		<div class="main">
-			<input type="checkbox" id="chk" aria-hidden="true">
+    <!DOCTYPE html>
+    <html lang="en">
 
-			<div class="login">
-				<div class="errormessage" id="errormessage"></div>
-				<div class="form" id="loginform">
-					<label for="chk" aria-hidden="true" id="login">Login</label>
-					<input class="input" type="text" name="username" placeholder="Username" id="username" required="">
-					<input class="input" type="password" name="pswd" placeholder="Password" id="password" required="">
-					<button id="btn"><a href="index.html">Log in</a></button>
-				</div>
-			</div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/Loginpage.css" class="stylesheet">
+    </head>
 
-			<div class="register">
-				<div class="form" id="regform">
-					<label for="chk" aria-hidden="true" id="register">Register</label>
-					<input class="input" type="text" name="txt" placeholder="Username" required="" id="un">
-					<input class="input" type="email" name="email" placeholder="Email" required="" id="email">
-					<input class="input" type="password" name="pswd" placeholder="Password" required="" id="pw">
-					<button><a href="index.html">Register</a></button>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="../javascript/Loginpage.js"></script>
-	<footer>
-		<p>&copy; 2023 Group_8 Production. All rights reserved XD.</p>
-	  </footer>
+    <body>
+        <!-- navbar -->
+        <div class="navbar">
+            <a href="#" class="logo"><img src="../images/bblogo2.png" style="width:90px;"></a>
+
+            <form action="">
+                <input type="text" placeholder="(under maintainance)">
+                <button type="submit" class="submit"><img src="https://img.icons8.com/ios-glyphs/512/search.png"
+                        id="search" alt="search icon" /></button>
+            </form>
+
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+
+            <div class="nav__link hide">
+                <a href="./index.html" class="href">Home</a>
+                <a href="./inputPage.html" class="href">Input</a>
+                <a href="./graphpage.html" class="href">Graph</a>
+                <a href="./comparisonpage.html" class="href">Comparison</a>
+                <a href="./aboutUs.html" class="href">About us</a>
+                <a href="./LoginPage.html" class="href">Login</a>
+            </div>
+
+
+        </div>
+        <!-- <h3 class="title">App Name</h3> -->
+        <div class="container">
+            <div class="main">
+                <div class="login">
+                    <h1 class="main-heading main-heading--shadow" data-text="Budget Buddy">Budget Buddy</h1>
+
+                    <div class="form" id="loginform">
+                        <label id="login">Login</label>
+                        <input class="input" type="text" name="username" placeholder="Username" id="username"
+                            required="">
+                        <input class="input" type="password" name="pswd" placeholder="Password" id="password"
+                            required="">
+                        <button id="btn"><a href="index.html">Log in</a></button>
+                        <br>
+                        <a href="#" id="links">Forgot Password?</a>
+                        <a href="#">Register here</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const navlink = document.querySelector('.nav__link');
+
+            hamburger.addEventListener('click', () => {
+                navlink.classList.toggle('hide');
+            });
+
+            const form = document.getElementById('loginform');
+            const usernameInput = document.getElementById('username');
+            const passwordInput = document.getElementById('password');
+            const errormessage = document.getElementById('errormessage');
+
+            console.log(usernameInput);
+            console.log(passwordInput);
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const username = usernameInput.value;
+                const password = passwordInput.value;
+
+                if (!username || !password) {
+                    // alert('Please enter a username and password');
+                    errormessage.textContent = 'Please enter a username and password';
+                    return;
+                };
+
+                // login(username, password);
+                if (username === 'user' && password === 'user') {
+                    window.location.href = '../pages/homepage.html';
+                } else {
+                    // alert('Invalid Credentials');
+                    errormessage.textContent = 'Invalid Credentials';
+                    setTimeout(() => {
+                        errormessage.style.display = 'none';
+                    }, 2000);
+                    usernameInput.value = '';
+                    passwordInput.value = '';
+                };
+            });
+        </script>
+        <footer>
+            <p>&copy; 2023 Group_8 Production. All rights reserved XD.</p>
+        </footer>
+    </body>
+
+    </html>
 </body>
-</html>
 
