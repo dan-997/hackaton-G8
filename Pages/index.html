@@ -5,115 +5,180 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BB- Home</title>
     <link rel="stylesheet" href="../css/homepage.css" class="stylesheet">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- navbar -->
     <div class="navbar">
-        <a href="./index.html" class="href">Home</a>
-        <a href="./graphpage.html" class="href">Graph</a>
-        <a href="./inputPage.html" class="href">Input</a>
-        <a href="./comparisonpage.html" class="href">Comparison</a>
-        <a href="./aboutUs.html" class="href">About us</a>
-        <a href="./LoginPage.html" class="href">Login/Register</a>
-        <form action=""><input type="text" placeholder="(under maintainance)"><button type="submit" class="submit">Go</button>
+        <a href="./index.html" class="logo"><img src="../images/bblogo2.png" style="width:90px;"></a>
+
+        <form action="">
+            <input type="text" placeholder="(under maintainance)">
+            <button type="submit" class="submit"><img src="https://img.icons8.com/ios-glyphs/512/search.png" id="search"
+                    alt="search icon" /></button>
         </form>
+
+        <div class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+
+        <div class="nav__link hide">
+            <a href="./index.html" class="href">Home</a>
+            <a href="./InputPage.html" class="href">Input</a>
+            <a href="./GraphPage.html" class="href">Graph</a>
+            <a href="./ComparisonPage.html" class="href">Comparison</a>
+            <a href="./aboutUs.html" class="href">About us</a>
+            <a href="./LoginPage.html" class="href">Login/Register</a>
+        </div>
     </div>
 
-    <!-- carousel -->
-    <div class="container" style="max-width:fit-content">
-        <h1 class="main-heading main-heading--shadow" data-text="Finance App">Finance App</h1>
-        <div class="content">
-            <!-- The content which is placed at the center of the carousel -->
-            <div class="carousel-content">
-                <!-- <h1 class="carousel-heading">
+    <div class="heading-cont">
+        <!-- carousel -->
+        <div class="container" style="max-width:fit-content">
+            <h1 class="main-heading main-heading--shadow" data-text="Budget Buddy">Budget Buddy</h1>
+            <h3 class="main-description">To provide knowledge and to save time</h3>
+            <div class="content">
+                <!-- The content which is placed at the center of the carousel -->
+                <div class="carousel-content">
+                    <!-- <h1 class="carousel-heading">
                     $$$
                 </h1>
                 <h3>Ca$h</h3> -->
-            </div>
-            <div class="slideshow">
-                <!-- carousel control buttons -->
-                <button class="slide-btn slide-btn-1"></button>
-                <button class="slide-btn slide-btn-2"></button>
-                <button class="slide-btn slide-btn-3"></button>
-                <button class="slide-btn slide-btn-4"></button>
-                <!-- carousel wrapper which contains all images -->
-                <div class="slideshow-wrapper">
-                    <div class="slide">
-                        <img class="slide-img"
-                            src="https://th.bing.com/th/id/R.0c4c38d8c192fd1cda158fea1bb9f176?rik=HFBEqsMtal59mQ&pid=ImgRaw&r=0"
-                            alt="image 1">
-                    </div>
-                    <div class="slide">
-                        <img class="slide-img"
-                            src="https://th.bing.com/th/id/R.f00b1fdce66a677a444f678b53dbef7e?rik=dv1NLUmMCsET4g&pid=ImgRaw&r=0"
-                            alt="image 2">
-                    </div>
-                    <div class="slide">
-                        <img class="slide-img"
-                            src="https://th.bing.com/th/id/R.639b2c4816f44634f873df6bdb3e8e3b?rik=PQHdjXtE8Y789Q&riu=http%3a%2f%2fcarleton.ca%2ffinancialservices%2fwp-content%2fuploads%2ffs-banner.jpg&ehk=C8drAsOlHIsbe7UmchyJHRgeE3bVZfTlY0a8GYSrBVQ%3d&risl=&pid=ImgRaw&r=0"
-                            alt="image 3">
-                    </div>
-                    <div class="slide">
-                        <img class="slide-img"
-                            src="https://www.surrey.ac.uk/sites/default/files/styles/banner_image_1500x470/public/2018-02/economics-and-finance-banner-image.jpg?itok=Fq_kxmXu"
-                            alt="image 4">
+                </div>
+                <div class="slideshow">
+                    <!-- carousel control buttons -->
+                    <button class="slide-btn slide-btn-1"></button>
+                    <button class="slide-btn slide-btn-2"></button>
+                    <button class="slide-btn slide-btn-3"></button>
+                    <button class="slide-btn slide-btn-4"></button>
+                    <!-- carousel wrapper which contains all images -->
+                    <div class="slideshow-wrapper">
+                        <div class="slide">
+                            <img class="slide-img"
+                                src="https://th.bing.com/th/id/R.0c4c38d8c192fd1cda158fea1bb9f176?rik=HFBEqsMtal59mQ&pid=ImgRaw&r=0"
+                                alt="image 1">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img"
+                                src="https://th.bing.com/th/id/R.f00b1fdce66a677a444f678b53dbef7e?rik=dv1NLUmMCsET4g&pid=ImgRaw&r=0"
+                                alt="image 2">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img"
+                                src="https://th.bing.com/th/id/R.639b2c4816f44634f873df6bdb3e8e3b?rik=PQHdjXtE8Y789Q&riu=http%3a%2f%2fcarleton.ca%2ffinancialservices%2fwp-content%2fuploads%2ffs-banner.jpg&ehk=C8drAsOlHIsbe7UmchyJHRgeE3bVZfTlY0a8GYSrBVQ%3d&risl=&pid=ImgRaw&r=0"
+                                alt="image 3">
+                        </div>
+                        <div class="slide">
+                            <img class="slide-img"
+                                src="https://www.surrey.ac.uk/sites/default/files/styles/banner_image_1500x470/public/2018-02/economics-and-finance-banner-image.jpg?itok=Fq_kxmXu"
+                                alt="image 4">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+
     <!-- content -->
     <div class="containers">
         <div class="card">
-            <div class="card-content">
-                <h1>Welcome!</h1>
-                <p>
-                    We are very happy that you're willing to check out our service!<br>
-                    Here are a few features of this webapp!
-                </p>
-                <br>
-                <hr>
-                <br>
-                <img class="icon" src="https://img.icons8.com/fluency/48/null/combo-chart.png"/>
-                <h2>Graph Tracking</h2>
-                <h4>Graphs generated by item stored</h4>
-                <img class="icon" src="https://img.icons8.com/fluency/48/null/receipt-dollar.png"/>
-                <h2>Receipt Scanner</h2>
-                <h4>Upload your receipts into the App in the Input Page to store your purchases</h4>
-                <img class="icon" src="https://img.icons8.com/color/48/null/comparing.png"/>
-                <h2>Price comparison</h2>
-                <h4>To compare price within your area</h4>
-                <img class="icon" src="https://img.icons8.com/external-elyra-zulfa-mahendra/64/null/external-chat-bot-metaverse-elyra-zulfa-mahendra.png"/>
-                <h2>AI Chat Assistance</h2>
-                <h4>AI assistant to ensure your every financial question answered or guided</h4>
+            <h1>Welcome!</h1>
+            <p>
+                We are very happy that you're willing to check out our service!<br>
+                Here are a few features of this webapp!
+            </p>
+            <br>
+            <!-- <hr> -->
+            <br>
+            <div class="row">
+                <div class="column">
+                    <div class="card-content">
+                        <a href="../pages/InputPage.html">
+                            <img class="icon" src="https://img.icons8.com/fluency/48/null/receipt-dollar.png" />
+                        </a>
+                        <h2>Receipt Scanner</h2>
+                        <h4>Upload your receipts into the App in the Input Page to store your purchases</h4>
+                    </div>
 
-                <h5 class="card-footer">From Group 8 enjoy your financial journey!</h5>
+                </div>
+
+                <div class="column">
+                    <div class="card-content">
+                        <a href="./GraphPage.html">
+                            <img class="icon" src="https://img.icons8.com/fluency/48/null/combo-chart.png" />
+                        </a>
+                        <h2>Graph Tracking</h2>
+                        <h4>Graphs generated by item stored</h4>
+                    </div>
+
+                </div>
+
+                <div class="column">
+                    <div class="card-content">
+                        <a href="./ComparisonPage.html">
+                            <img class="icon" src="https://img.icons8.com/color/48/null/comparing.png" />
+                        </a>
+                        <h2>Price comparison</h2>
+                        <h4>To compare price within your area</h4>
+                    </div>
+
+                </div>
+
+                <div class="column">
+                    <div class="card-content">
+                        <img class="icon"
+                            src="https://img.icons8.com/external-elyra-zulfa-mahendra/64/null/external-chat-bot-metaverse-elyra-zulfa-mahendra.png" />
+                        <h2>AI Chat Assistance</h2>
+                        <h4>AI assistant to ensure your every financial question answered or guided</h4>
+                    </div>
+
+                </div>
+
+                <h5 class="card-footer">From Group 8, enjoy your financial journey!</h5>
             </div>
         </div>
     </div>
 
-    <button class="open-button" onclick="openForm()">Chat</button>
-    
+    <button class="open-button" onclick="openForm()"><img
+            src="https://img.icons8.com/external-elyra-zulfa-mahendra/64/null/external-chat-bot-metaverse-elyra-zulfa-mahendra.png"></button>
+
     <div class="chat-popup" id="myForm" style="background-color: black;">
-      <form style="background-color:black;" action="" class="form-container">
-        <h1>Chat</h1>
-    
-        <label for="msg" style="color: aqua;"><b>Message</b></label>
-        <textarea placeholder="Type message.." name="msg" required></textarea>
-    
-        <button style="background-color:aqua;" type="submit" class="btn">Send</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-      </form>
+        <form style="background-color:black;" action="" class="form-container">
+            <h1><img
+                src="https://img.icons8.com/external-elyra-zulfa-mahendra/64/null/external-chat-bot-metaverse-elyra-zulfa-mahendra.png"/></h1>
+
+            <label for="msg" style="color: aqua;"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button style="background-color:aqua;" type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <p>&copy; 2023 Group_8 Production. All rights reserved XD.</p>
+        </footer>
     </div>
     <script src="../javascript/chatBot.js"></script>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navlink = document.querySelector('.nav__link');
 
-    <footer>
+        hamburger.addEventListener('click', () => {
+            navlink.classList.toggle('hide');
+        });
+    </script>
+
+    <!-- <footer>
         <p>&copy; 2023 Group_8 Production. All rights reserved XD.</p>
-      </footer>
+    </footer> -->
 </body>
 
 </html>
