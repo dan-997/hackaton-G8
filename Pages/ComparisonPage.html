@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BB- Comparison</title>
     <link rel="stylesheet" href="../css/comparison.css">
 </head>
 
 <body>
     <!-- navbar -->
     <div class="navbar">
-        <a href="#" class="logo"><img src="../images/bblogo2.png" style="width:90px;"></a>
+        <a href="./index.html" class="logo"><img src="../images/bblogo2.png" style="width:90px;"></a>
 
         <form action="">
             <input type="text" placeholder="(under maintainance)">
@@ -28,49 +28,83 @@
 
         <div class="nav__link hide">
             <a href="./index.html" class="href">Home</a>
-            <a href="./inputPage.html" class="href">Input</a>
-            <a href="./graphpage.html" class="href">Graph</a>
-            <a href="./comparisonpage.html" class="href">Comparison</a>
+            <a href="./InputPage.html" class="href">Input</a>
+            <a href="./GraphPage.html" class="href">Graph</a>
+            <a href="./ComparisonPage.html" class="href">Comparison</a>
             <a href="./aboutUs.html" class="href">About us</a>
             <a href="./LoginPage.html" class="href">Login/Register</a>
         </div>
-
-
     </div>
 
-    <h2 class="page-header" style="text-align: center; color: aqua; margin-top: 50px; margin-bottom: 13px;">Price Comparison</h2>
-    <p style="text-align: center; color: rgb(230, 229, 241); font-size:small; margin-bottom: 5px;">Enter the item you wish to compare prices for in the search bar below. <br>The table will show the price of the item at each location.</p>
+    <div class="header">
+        <h1 class="main-heading main-heading--shadow" data-text="Budget Buddy">Budget Buddy</h1>
+        <h3 class="main-description">To provide knowledge and to save time</h3>
+        <p>
+            Enter your item in the search bar below to compare prices from different locations in Brunei
+        </p>
+    </div>
 
-    <div class="wrapper">
-        <div class="searchitem">
-            <form action="" type="text" id="searchTerm" class="form" onsubmit="event.preventDefault(); displayData()">
-                <input type="text" class="searchinput" placeholder="Search" autocomplete="off" onkeyup="search()">
-                <button class="submit" type="submit" placehodler="Search">Search</button>
-            </form>
-        </div>
-
-        <tbody id="tableBody">
-            <tr></tr>
-        </tbody>
-
-        <div class="table">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Item</th>
-                        <th>Price</th>
-                        <th>Location</th>
-                    </tr>
-                <tbody id="tableBody">
-                    <tr></tr>
-                </tbody>
-                </thead>
-                <tbody>
-                    <tr></tr>
-                </tbody>
-            </table>
+    <div class="container">
+        <div class="card">
+            <div class="searchitem">
+                <form action="" type="text" id="searchTerm" class="form"
+                    onsubmit="event.preventDefault(); displayData()">
+                    <input type="text" class="searchinput" placeholder="Search" autocomplete="off" onkeyup="search()">
+                    <button class="submit" type="submit" placehodler="Search">Search</button>
+                </form>
+            </div>
         </div>
     </div>
+    <div class="container-table">
+        <div class="wrapper">
+            <tbody id="tableBody">
+                <tr></tr>
+            </tbody>
+
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Location</th>
+                        </tr>
+                    <tbody id="tableBody">
+                        <tr></tr>
+                    </tbody>
+                    </thead>
+                    <tbody>
+                        <tr></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <button class="open-button" onclick="openForm()"><img
+        src="https://img.icons8.com/external-elyra-zulfa-mahendra/64/null/external-chat-bot-metaverse-elyra-zulfa-mahendra.png"></button>
+
+    <div class="chat-popup" id="myForm" style="background-color: black;">
+        <form style="background-color:black;" action="" class="form-container">
+            <h1><img
+                src="https://img.icons8.com/external-elyra-zulfa-mahendra/64/null/external-chat-bot-metaverse-elyra-zulfa-mahendra.png"/></h1>
+
+            <label for="msg" style="color: aqua;"><b>Message</b></label>
+            <textarea placeholder="Type message.." name="msg" required></textarea>
+
+            <button style="background-color:aqua;" type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <p>&copy; 2023 Group_8 Production. All rights reserved XD.</p>
+        </footer>
+    </div>
+
+    <!-- script -->
     <script src="../javascript/displayData.js"></script>
     <script>
         const hamburger = document.querySelector('.hamburger');
@@ -80,9 +114,6 @@
             navlink.classList.toggle('hide');
         });
     </script>
-    <footer>
-        <p>&copy; 2023 Group_8 Production. All rights reserved XD.</p>
-    </footer>
 </body>
 
 </html>
