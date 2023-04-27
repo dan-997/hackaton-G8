@@ -4,10 +4,11 @@
     margin: 0;
     padding: 0;
     font-size: 20px;
+    /* font-family: 'Caladea' serif; */
 }
 
 body {
-    background: #121212;
+    background: #0c1c1c;
     font-family: 'Actor', sans-serif;
 }
 
@@ -24,12 +25,11 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 4.5px;
+    background-color: #121212;
 }
 
 .logo {
-    font-size: 1.2rem;
-    color: aqua;
     padding-left: 20px;
 }
 
@@ -65,6 +65,16 @@ a {
     display: none;
 }
 
+/* Reduce the size of the carousel */
+.carousel {
+    height: 200px;
+}
+
+/* Reduce the font size for smaller screens */
+.main-heading {
+    font-size: 2rem;
+}
+
 /* large res */
 @media screen and (min-width: 768px) {
     .nav__link {
@@ -83,72 +93,118 @@ a {
     .hamburger {
         display: none;
     }
+
+    .main-heading {
+        padding-top: 0.5rem;
+    }
 }
 
+/* ----------------------------------------------- */
+/* search */
 #search {
 
     width: 15px;
     height: auto;
 }
 
-/* .navbar form {
-    float: left;
-    margin-top: 10px;
-    margin-right: 16px;
-}*/
-
 .navbar input[type=text] {
     padding: 3px;
     border: none;
     border-radius: 4px;
     margin-right: 5px;
+    width: 190px;
 }
 
 .navbar button {
     cursor: pointer;
 }
 
-
-/* ----------------------------------------------- */
-/*  content  */
-.card {
-    flex-direction: column;
-    min-height: 250px;
-    background: #121212;
-    width: 80%;
-    /* box-shadow: 15px 15px 30px rgba(91, 239, 215, 0.2),
-        -15px -15px 30px rgba(102, 252, 241, 0.3); */
-}
-
-h1 {
-    color: aqua;
-    margin-top: 80px;
-    margin-bottom: 10px;
-    font-size:smaller;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* -------------------------------------------------------------------------------------------------- */
+/* header */
+.header{ 
+    /* border: solid red; */
     text-align: center;
+    background-color: #055353;
+}
+.main-heading {
+    color: #66fcf1;
+    /* color: #043c3c; */
+    padding: 1.5rem 0 0rem 0;
+    text-transform: uppercase;
+    font-weight: bolder;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
 }
 
-hr{
-    display: flex;
-    height: 2px;
+.main-description {
+    padding-bottom: 2rem;
+    font-size: smaller;
+    /* color: #121212; */
+    color: rgb(230, 229, 241);
+}
+
+.header p {
+    font-size: 15px;
+    color: rgb(206, 205, 219);
+    padding-bottom: 40px;
+    font-weight: bold;
+    font-family: 'Khula', sans-serif, serif;
+}
+
+/* --footer--*/
+footer {
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
     width: 100%;
-    background-color: #45a049;
-    justify-content: center;
+    display: flex;
     align-items: center;
-    align-self: center;
+    justify-content: center;
+    background-color: #0c1c1c;
+
 }
 
+footer p {
+    color: #66fcf1;
+    font-size: 10px;
+}
 
-/* ---file drop--- */
+/* -------input-------- */
+.container {
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    padding: 40px;
+    /* border: solid red; */
+    background-color: #0c1c1c;
+} 
 
+.card {
+    /* border: solid green; */
+    padding-top: 10px;
+    width: 100%;
+    min-height: 300px;
+    
+}
+
+/* --------------file drop----------- */
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px auto;
+}
+
+.drop-area {
+    border: solid #143434;
+    background-color: #143434;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(65,212,207,0.2);
+}
+
+.preview-container {
+    /* border: solid green; */
+    border-radius: 10px;
 }
 
 .file-drop {
@@ -282,12 +338,74 @@ hr{
     background-color: #45a049;
   }
 
-/* --footer--*/
-footer{
-    display: flex;
-    justify-content: center;
-}
-footer p {
-    color:#66fcf1;
-    font-size: 10px;
-}
+/* ----------------------------------------------- */
+/* chatbox */
+.open-button {
+    background-color: aqua;
+    color: white;
+    padding: 1px 10px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 80px;
+    border-radius: 100px;
+  }
+
+  /* The popup chat - hidden by default */
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid rgb(230, 229, 241);
+    z-index: 3000;
+  }
+
+   /* Add styles to the form container */
+   .form-container {
+    max-width: 300px !important;
+    padding: 10px !important;
+    background-color: rgb(33, 32, 32) !important;
+  }
+
+  /* Full-width textarea */
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+  }
+
+  /* When the textarea gets focus, do something */
+  .form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  /* Set a style for the submit/send button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: grey;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
